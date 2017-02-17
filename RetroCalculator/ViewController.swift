@@ -44,6 +44,8 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
         
+        outputLbl.text = "0"
+        
     }
     
     @IBAction func numberPressed(sender: UIButton) {
