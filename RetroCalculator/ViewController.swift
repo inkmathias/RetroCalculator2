@@ -83,8 +83,10 @@ class ViewController: UIViewController {
         }
         btnSound.play()
     }
+   
     
     func processOperation(operation: Operation) {
+        playSound()
         if currentOperation != Operation.Empty {
             
             if runningNumber != "" {
@@ -109,6 +111,7 @@ class ViewController: UIViewController {
                 leftValStr = runningNumber
                 runningNumber = ""
                 currentOperation = operation
+                
             }
         }
     }
